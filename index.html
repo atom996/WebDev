@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--Link to the CSS file!-->
+    <link rel="stylesheet" href="WebStyle.css">
     <title> Personal Web Page </title>
   </head>
 
-  <body>
-    <h1> My Website </h1>
+  <body style="background-color: khaki;">
+    <h1 class="topHeader"> Al's Basic Webpage Filled With Somewhat Interesting Interests </h1>
     <hr/>
 
-    <div class="geninfo" id="start">
+    <div class="menuContainer">
+      <table class="table"
+        <tr>
+          <th><a href="#start" class="a"> General Information </a></th>
+          <th><a href="#edu" class="a"> Education </a></th>
+          <th><a href="#work" class="a"> Work Experience </a></th>
+          <th><a href="#skills" class="a"> Programming Skills </a></th>
+          <th><a href="#geninterests" class="a"> General Interests </a></th>
+          <th><a href="#favorite" class="a"> Favorite Media </a></th>
+          <th><a href="#website" class="a"> Favorite Website </a></th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="generalContainer" id="start">
     <h2> General Information </h2>
     <p> Name: Alpin Tomorri </p>
     <p> Major: Computer Science </p>
     <img src="al.jpg" alt="Me">
     </div>
 
-    <div class="education" id="edu">
+    <div class="generalContainer" id="edu">
     <h2> Education </h2>
     <p> I am currently going for a B.S in Computer Science at St. John's
     University.</p>
     </div>
 
-    <div class="workexp" id="work">
+    <div class="generalContainer" id="work">
     <h2> Work Experience </h2>
     <ul>
       <li>Volunteer for the Escort Department, New York Presbyterian Hospital [2014-2017]</li>
@@ -30,7 +46,7 @@
     </ul>
     </div>
 
-    <div class="progskill" id="skills">
+    <div class="generalContainer" id="skills">
     <h2> Programming Skills </h2>
     <ul>
       <li> Java - Intermediate Level: Moderate Amount of Experience. </li>
@@ -41,7 +57,7 @@
     </ul>
     </div>
 
-    <div class="geninterest" id="geninterests">
+    <div class="generalContainer" id="geninterests">
     <h2> General Interests/Hobbies </h2>
     <ul>
       <li>Hiking</li>
@@ -55,40 +71,23 @@
     </ul>
     </div>
 
-    <div class="favorites" id="favorite"
+    <div class="generalContainer"id="favorite"
     <h2>Favorite Song, Movie and TV show</h2>
-    <table border="1">
-      <tr>
-        <th>Song</th>
-        <th>Movie</th>
-        <th>Show</th>
-      </tr>
-
-      <tr>
-        <td>Honestly, I have no favorite song. Genres I listen to are mostly DnB and Power Metal. Pendulum and Powerwolf come to mind</td>
-        <td>Full Metal Jacket</td>
-        <td><span style="color:green">Breaking Bad</span></td>
-      </tr>
-    <table>
+      <ul>
+        <li>Song: Honestly, I have no favorite song. Genres I listen to are mostly DnB and Power Metal. Pendulum and Powerwolf come to mind</li>
+        <li>Movie: Full Metal Jacket</li>
+        <li>Song: <span style="color:green">Breaking Bad</span> </li>
+      </ul>
     </div>
 
-    <div class="web" id="website">
+    <div class="favoriteWebsiteContainer" id="website">
     <h2> Favorite Website </h2>
-    <p>One of my favorite websites has to be <a href="https://www.newgrounds.com/" target="_blank">Newgrounds</a> mostly because of childhood memories playing flash games.</p>
+    <p>One of my favorite websites has to be <a href="https://www.newgrounds.com/" class="a" target="_blank">Newgrounds</a> mostly because of childhood memories playing flash games.</p>
     </div>
 
-    <h2> Menu - Jump to Different Sections </h2>
-    <p><a href="#start"> General Information </a></p>
-    <p><a href="#edu"> Education </a></p>
-    <p><a href="#work"> Work Experience </a></p>
-    <p><a href="#skills"> Programming Skills </a></p>
-    <p><a href="#geninterests"> General Interests </a></p>
-    <p><a href="#favorite"> Favorite Media </a></p>
-    <p><a href="#website"> Favorite Website </a></p>
-
-    <h2>Projects for this course</h2>
-    <p>Currently Empty</p>
-
+    <h2 class="center">Projects for this course</h2>
+    <p class="center">Currently Empty</p>
+    <a href="#start" class="a center">Back to the top?</a>
 
   </body>
 
