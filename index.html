@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <!--Link to the CSS file!-->
+    <!--Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="WebStyle.css">
-    <title> Personal Web Page </title>
+
+    <!--Title-->
+    <title> Alpin T - Home Page </title>
+
   </head>
+
     <!--Body starts here-->
-  <body style="background-color: khaki;">
-    <script src="test.js"></script>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: khaki;">
+    <nav class="navbar navbar-expand-sm bg-dark navbark-dark fixed-top">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#start" class="nav-link">Gen Info</a></li>
+        <li class="nav-item"><a href="#edu" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">Work Experience</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Programming Skills</a></li>
+        <li class="nav-item"><a href="#geninterests" class="nav-link">General Interests</a></li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Favorite Online Things</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#start">Gen Info</a>
+              <a class="dropdown-item" href="#edu">Education</a>
+              <a class="dropdown-item" href="#work">Work Experience</a>
+              <a class="dropdown-item" href="#skills">Programming Skills</a>
+              <a class="dropdown-item" href="#geninterests">General Interests</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
 
-    <h1 class="topHeader"> Al's Basic Webpage Filled With Somewhat Interesting Interests </h1>
-    <hr/>
+    <div class="jumbotron jumbotron-fluid" style="background-color: green">
+      <div class="container">
+        <h1>Al's Basic Webpage Filled With Somewhat Interesting Interests</h1>
+        <p style="color: whitesmoke">Navigation Links Below:</p>
+      </div>
+    </div>
 
-    <div class="menuContainer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"><a href="#start" class="a">General Information</a></div>
+        <div class="col-sm-2"><a href="#edu" class="a">Education</a></div>
+        <div class="col-sm-2"><a href="#work" class="a">Work Experience</a></div>
+        <div class="col-sm-2"><a href="#skills" class="a">Programming Skills</a></div>
+        <div class="col-sm-2"><a href="#geninterests" class="a">General Interests</a></div>
+        <div class="col-sm-2"><a href="#favorite" class="a">Favorite Online Stuff</a></div>
+      </div>
+    </div>
+    <!--<div class="menuContainer">
       <table class="table"
         <tr>
           <th><a href="#start" class="a"> General Information </a></th>
@@ -25,7 +68,7 @@
         </tr>
       </table>
     </div>
-
+  -->
     <div class="generalContainer" id="start">
     <h2> General Information </h2>
     <p> Name: Alpin Tomorri </p>
