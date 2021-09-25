@@ -15,74 +15,62 @@
   </head>
 
     <!--Body starts here-->
-  <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: khaki;">
+  <body data-spy="scroll" data-target=".navbar" data-offset="10" style="background-color: khaki;">
+    <!--Scrollspy Start-->
     <nav class="navbar navbar-expand-sm bg-dark navbark-dark fixed-top">
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="#start" class="nav-link">Gen Info</a></li>
-        <li class="nav-item"><a href="#edu" class="nav-link">Education</a></li>
-        <li class="nav-item"><a href="#work" class="nav-link">Work Experience</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Programming Skills</a></li>
-        <li class="nav-item"><a href="#geninterests" class="nav-link">General Interests</a></li>
+        <li class="nav-item"><a href="#section1" class="nav-link">Gen Info</a></li>
+        <li class="nav-item"><a href="#section2" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#section3" class="nav-link">Work Experience</a></li>
+        <li class="nav-item"><a href="#section4" class="nav-link">Programming Skills</a></li>
+        <li class="nav-item"><a href="#section5" class="nav-link">General Interests</a></li>
+        <li class="nav-item"><a href="#section6" class="nav-link">General Interests</a>
         <li class="nav-item">
           <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Favorite Online Things</a>
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Navigate</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#start">Gen Info</a>
-              <a class="dropdown-item" href="#edu">Education</a>
-              <a class="dropdown-item" href="#work">Work Experience</a>
-              <a class="dropdown-item" href="#skills">Programming Skills</a>
-              <a class="dropdown-item" href="#geninterests">General Interests</a>
+              <a class="dropdown-item" href="#section1">Gen Info</a>
+              <a class="dropdown-item" href="#section2">Education</a>
+              <a class="dropdown-item" href="#section3">Work Experience</a>
+              <a class="dropdown-item" href="#section4">Programming Skills</a>
+              <a class="dropdown-item" href="#section5">General Interests</a>
+              <a class="dropdown-item" href="#section6">Favorite Media</a>
             </div>
           </div>
         </li>
       </ul>
     </nav>
-
+    <!--Scrollspy End-->
     <div class="jumbotron jumbotron-fluid" style="background-color: green">
       <div class="container">
-        <h1>Al's Basic Webpage Filled With Somewhat Interesting Interests</h1>
-        <p style="color: whitesmoke">Navigation Links Below:</p>
+        <h1 style="color: whitesmoke;">Al's Basic Webpage Filled With Somewhat Interesting Interests</h1>
+        <p style="color: whitesmoke">Website that I am currently working on for my Web Design Course.</p>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2"><a href="#start" class="a">General Information</a></div>
-        <div class="col-sm-2"><a href="#edu" class="a">Education</a></div>
-        <div class="col-sm-2"><a href="#work" class="a">Work Experience</a></div>
-        <div class="col-sm-2"><a href="#skills" class="a">Programming Skills</a></div>
-        <div class="col-sm-2"><a href="#geninterests" class="a">General Interests</a></div>
-        <div class="col-sm-2"><a href="#favorite" class="a">Favorite Online Stuff</a></div>
+    <div class="container" id="section1">
+      <div class="jumbotron" style="background-color: green;">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 style="text-align: center; color: whitesmoke"> General Information</h2>
+            <p style="text-align: center; color: whitesmoke"> Name: Alpin Tomorri </p>
+            <p style="text-align: center; color: whitesmoke"> An eager Computer Science student looking to improve his skills in using various programming languages and applying CS principles through said languages.</p>
+            <hr style="background-color: whitesmoke;">
+            <h2 style="text-align: center; color: whitesmoke" id="section2"> Education </h2>
+            <p style="text-align: left; color: whitesmoke"> Currently a senior undergrad at St. John's University [2017-2021]. My major is a B.S in Computer Science. Various subjects that I have studied
+            are: Data Structures and Algorithms, Software Design Patterns, Databases, Operating Systems and Discrete Mathematics</p>
+            <hr style="background-color: whitesmoke;">
+            <h2 style="text-align: center; color: whitesmoke" id="section4"> Skills </h2>
+            <p style="text-align: center; color: whitesmoke"> Experience using Java, HTML/CSS, minor JavaScript knowledge, and SQL/MySQL.</p>
+          </div>
+          <div class="col-sm-6">
+            <img src="al.jpg" alt="Wheatley" style="height: 100%; width: 100%">
+          </div>
+        </div>
       </div>
     </div>
-    <!--<div class="menuContainer">
-      <table class="table"
-        <tr>
-          <th><a href="#start" class="a"> General Information </a></th>
-          <th><a href="#edu" class="a"> Education </a></th>
-          <th><a href="#work" class="a"> Work Experience </a></th>
-          <th><a href="#skills" class="a"> Programming Skills </a></th>
-          <th><a href="#geninterests" class="a"> General Interests </a></th>
-          <th><a href="#favorite" class="a"> Favorite Media </a></th>
-          <th><a href="#website" class="a"> Favorite Website </a></th>
-        </tr>
-      </table>
-    </div>
-  -->
-    <div class="generalContainer" id="start">
-    <h2> General Information </h2>
-    <p> Name: Alpin Tomorri </p>
-    <p> Major: Computer Science </p>
-    <img src="al.jpg" alt="Me">
-    </div>
 
-    <div class="generalContainer" id="edu">
-    <h2> Education </h2>
-    <p> I am currently going for a B.S in Computer Science at St. John's
-    University.</p>
-    </div>
-
-    <div class="generalContainer" id="work">
+    <div class="generalContainer" id="section3">
     <h2> Work Experience </h2>
     <ul>
       <li>Volunteer for the Escort Department, New York Presbyterian Hospital [2014-2017]</li>
@@ -91,18 +79,7 @@
     </ul>
     </div>
 
-    <div class="generalContainer" id="skills">
-    <h2> Programming Skills </h2>
-    <ul>
-      <li> Java - Intermediate Level: Moderate Amount of Experience. </li>
-      <li> Python - Novice: Little Experience. </li>
-      <li> C# - Intermediate: Less Experience compared to Java, utilized C# for Senior Capstone project in High School. </li>
-      <li> SQL - Novice: Some experience, mostly with MySQL for academic work. </li>
-      <li> C - Novice: Experience mainly from crating files for Linux OS course. </li>
-    </ul>
-    </div>
-
-    <div class="generalContainer" id="geninterests">
+    <div class="generalContainer" id="section5">
     <h2> General Interests/Hobbies </h2>
     <ul>
       <li>Hiking</li>
@@ -116,7 +93,7 @@
     </ul>
     </div>
 
-    <div class="generalContainer"id="favorite"
+    <div class="generalContainer"id="section6">
     <h2>Favorite Song, Movie and TV show</h2>
       <ul>
         <li>Song: Honestly, I have no favorite song. Genres I listen to are mostly DnB and Power Metal. Pendulum and Powerwolf come to mind</li>
