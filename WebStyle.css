@@ -1,11 +1,19 @@
-.p {
+.jumboP{
+  color: green;
+  text-align: left;
+}
+
+.jumboH1{
+  color: green;
+  text-align: left;
+}
+
+.cellH1 {
+  text-align: center;
   color: whitesmoke;
 }
 
-.h1 {
-  color: whitesmoke;
-}
-
-.h2 {
+.cellP {
+  text-align: center;
   color: whitesmoke;
 }
